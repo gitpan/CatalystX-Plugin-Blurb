@@ -1,8 +1,11 @@
 ---
-abstract: 'handle transient messages and UI elements.'
+abstract: '(alpha software) handle transient messages and UI elements.'
 author:
   - 'Ashley Pond V  C<< <ashley@cpan.org> >>.'
 build_requires:
+  Catalyst::Plugin::Session: 0
+  Catalyst::Plugin::Session::State::Cookie: 0
+  Catalyst::Plugin::Session::Store::FastMmap: 0
   ExtUtils::MakeMaker: 6.42
   Test::More: 0
   Test::WWW::Mechanize::Catalyst: 0
@@ -24,4 +27,5 @@ requires:
   Catalyst::Runtime: 0
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.01
+  repository: git://github.com/pangyre/p5-catalystx-plugin-blurb
+version: 0.02

@@ -1,12 +1,17 @@
 use inc::Module::Install;
 
 name 'CatalystX-Plugin-Blurb';
+license 'perl';
 all_from 'lib/CatalystX/Plugin/Blurb.pm';
+repository "git://github.com/pangyre/p5-catalystx-plugin-blurb";
 
 requires 'Catalyst::Runtime';
 test_requires 'Test::WWW::Mechanize::Catalyst';
 test_requires 'Test::More';
 test_requires 'ok';
+test_requires "Catalyst::Plugin::Session";
+test_requires "Catalyst::Plugin::Session::Store::FastMmap";
+test_requires "Catalyst::Plugin::Session::State::Cookie";
 
 WriteAll();
 
