@@ -25,7 +25,8 @@ no_index:
     - t
 requires:
   Catalyst::Runtime: 0
+  parent: 0
 resources:
   license: http://dev.perl.org/licenses/
   repository: git://github.com/pangyre/p5-catalystx-plugin-blurb
-version: 0.02
+version: 0.03
